@@ -5,20 +5,16 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 import { AiOutlineArrowDown, AiOutlineChrome } from 'react-icons/ai';
 import { GoMarkGithub } from 'react-icons/go';
 
-
 const TopSection = () => {
     return (
         <div>
             <Row>
-                <Col xs={12} md={2} className="bg-info">
-                    At present it's remain default ,
-                    Upgrading later.
-                    Thank You
+                <Col xs={12} md={2} className="bg-info profile-details both-item">
+                    <img src="https://i.ibb.co/483BFv1/11.jpg" alt="" />
                 </Col>
                 <Col xs={12} md={10}>
-
                     {/* Top Section Part Started */}
-                    <Row className="bg-black py-5 px-5 text-start details-setion">
+                    <Row id="home" className="bg-black px-5 text-start details-setion both-item">
                         <Col xs={6} md={2}>
                             {/* Nothing to add */}
                         </Col>
@@ -35,13 +31,15 @@ const TopSection = () => {
                                 <br /> <br /> <br />
                                 <Row className="img-information">
                                     <Col xs={4} md={2}>
-                                        <img src="https://i.ibb.co/c8G0tCc/facebook-icon-153518-removebg-preview.png" alt="img not found" />
+                                        <a href="https://web.facebook.com/hardkepar.hemo/"><img src="https://i.ibb.co/c8G0tCc/facebook-icon-153518-removebg-preview.png" alt="img not found" /></a>
+
                                     </Col>
                                     <Col xs={4} md={2}>
-                                        <img src="https://i.ibb.co/GvQpWg7/linkedin-removebg-preview.png" alt="" />
+                                        <a href="https://www.linkedin.com/in/shakawat-hosain-6824011ba/"> <img src="https://i.ibb.co/GvQpWg7/linkedin-removebg-preview.png" alt="" /></a>
                                     </Col>
                                     <Col xs={4} md={2}>
-                                        <img src="https://i.ibb.co/KwYNNDp/github-removebg-preview.png" alt="" />
+                                        <a href="https://github.com/shakawatChy434"> <img src="https://i.ibb.co/KwYNNDp/github-removebg-preview.png" alt="" /></a>
+
                                     </Col>
                                 </Row>
                             </Container>
@@ -49,7 +47,7 @@ const TopSection = () => {
                     </Row>
                     {/* Top Section Part Started */}
                     {/*About Part Started */}
-                    <Row className="bg-black py-5 px-5 details-setion">
+                    <Row id="about" className="bg-black py-5 px-5 details-setion">
                         <Row>
                             <Col>
                                 <h1 className="text-white text-center pt-5 "> <span className="text-primary">About</span> Me</h1>
@@ -73,13 +71,13 @@ const TopSection = () => {
                                         <br />
                                         <Row className="img-information">
                                             <Col xs={4} md={3} >
-                                                <img src="https://i.ibb.co/c8G0tCc/facebook-icon-153518-removebg-preview.png" alt="img not found" />
+                                                <a href="https://web.facebook.com/hardkepar.hemo/"><img src="https://i.ibb.co/c8G0tCc/facebook-icon-153518-removebg-preview.png" alt="img not found" /></a>
                                             </Col>
                                             <Col xs={4} md={3} >
-                                                <img src="https://i.ibb.co/GvQpWg7/linkedin-removebg-preview.png" alt="" />
+                                                <a href="https://www.linkedin.com/in/shakawat-hosain-6824011ba/"> <img src="https://i.ibb.co/GvQpWg7/linkedin-removebg-preview.png" alt="" /></a>
                                             </Col>
                                             <Col xs={4} md={3} lg={2}>
-                                                <img src="https://i.ibb.co/KwYNNDp/github-removebg-preview.png" alt="" />
+                                                <a href="https://github.com/shakawatChy434"> <img src="https://i.ibb.co/KwYNNDp/github-removebg-preview.png" alt="" /></a>
                                             </Col>
                                         </Row>
                                     </Container>
@@ -111,7 +109,7 @@ const TopSection = () => {
                     </Row>
                     {/*About Part End */}
                     {/*My Skills Part start */}
-                    <Row className="bg-black py-5 px-5 details-setion">
+                    <Row id="skills" className="bg-black py-5 px-5 details-setion">
                         <Row>
                             <Col>
                                 <h1 className="text-white text-center pt-5 "> <span className="text-primary">My</span> Skills </h1>
@@ -182,7 +180,7 @@ const TopSection = () => {
                     </Row>
                     {/*My Skills Part End */}
                     {/*My Services Part Start */}
-                    <Row className="bg-black py-5 px-5 details-setion">
+                    <Row id="services" className="bg-black py-5 px-5 details-setion">
                         <Row>
                             <Col>
                                 <h1 className="text-white text-center pt-5 "> My <span className="text-primary">Services</span></h1>
@@ -240,59 +238,11 @@ const TopSection = () => {
                         </Col>
                     </Row>
                     {/*My Services Part End */}
-                    {/*My Portfolio Part Start */}
-                    <Row className="bg-black py-5 px-5 details-setion">
-                        <Row>
-                            <Col>
-                                <h1 className="text-white text-center pt-5 "> My <span className="text-primary">Portfolio</span></h1>
-                            </Col>
-                        </Row>
-                        <Row><Col xs={6} md={10} className="about-info"></Col></Row>
-                        <Col className="text-white">
-                            <Row className="py-5">
-                                <Col xs={6} md={2}>
-                                    {/* Nothing to add */}
-                                </Col>
-                                <Col xs={12} md={10}>
-                                    <Container className="text-center" >
-                                        <Row className="text-white">
-                                            <Col xs={4} md={4}>
-                                                <Card style={{ width: '23rem', height: '15.3rem', background: 'black' }}>
-                                                    <Card.Img variant="top" src="https://i.ibb.co/tQqgdz2/images1.jpg" />
-                                                    <Card.Body className="card-btn">
-                                                        <Button className=" card-btnInfo me-2 px-5">Github</Button>
-                                                        <Button className="  card-btnInfo ms-3 px-5">Live Site</Button>
-                                                    </Card.Body>
-                                                </Card>
-                                            </Col>
-                                            <Col xs={4} md={4}>
-                                                <Card style={{ width: '23rem', height: '15.3rem', background: 'black' }}>
-                                                    <Card.Img variant="top" src="https://i.ibb.co/tQqgdz2/images1.jpg" />
-                                                    <Card.Body className="card-btn">
-                                                        <Button className=" card-btnInfo me-2 px-5">Github</Button>
-                                                        <Button className="  card-btnInfo ms-3 px-5">Live Site</Button>
-                                                    </Card.Body>
-                                                </Card>
-                                            </Col>
-                                            <Col xs={4} md={4}>
-                                                <Card style={{ width: '23rem', height: '15.3rem', background: 'black' }}>
-                                                    <Card.Img variant="top" src="https://i.ibb.co/tQqgdz2/images1.jpg" />
-                                                    <Card.Body className="card-btn">
-                                                        <Button className=" card-btnInfo me-2 px-5">Github</Button>
-                                                        <Button className="  card-btnInfo ms-3 px-5">Live Site</Button>
-                                                    </Card.Body>
-                                                </Card>
-                                            </Col>
-                                        </Row>
-                                    </Container>
-                                </Col>
-                            </Row>
-                        </Col>
-                    </Row>
+
                     {/*My Portfolio Part End */}
-                    {/*My Portfolio Part End */}
-                    <Row className="bg-black py-5 px-5 details-setion">
+                    <Row id="portfolio" className="bg-black py-5 px-5 details-setion">
                         <Row>
+
                             <Col>
                                 <h1 className="text-white text-center pt-5 "> My <span className="text-primary">Portfolio</span></h1>
                             </Col>
@@ -320,7 +270,7 @@ const TopSection = () => {
                                             {Array.from({ length: 1 }).map((_, idx) => (
                                                 <Col>
                                                     <Card className="bg-dark ">
-                                                        <Card.Img className="" src="https://i.ibb.co/tQqgdz2/images1.jpg" />
+                                                        <Card.Img className="" src="https://i.ibb.co/LNpPjKb/Jakarta-Indonesia.jpg" />
                                                         <Card.Body className="card-btn">
                                                             <Button className=" card-btnInfo me-3"> <GoMarkGithub /> Github</Button>
                                                             <Button className="  card-btnInfo "><AiOutlineChrome /> Live Site</Button>
@@ -331,7 +281,7 @@ const TopSection = () => {
                                             {Array.from({ length: 1 }).map((_, idx) => (
                                                 <Col>
                                                     <Card className="bg-dark ">
-                                                        <Card.Img className="" src="https://i.ibb.co/tQqgdz2/images1.jpg" />
+                                                        <Card.Img className="" src="https://i.ibb.co/sRKv6Kd/Semporna-Malaysia.jpg" />
                                                         <Card.Body className="card-btn">
                                                             <Button className=" card-btnInfo me-3"> <GoMarkGithub /> Github</Button>
                                                             <Button className="  card-btnInfo "><AiOutlineChrome /> Live Site</Button>
@@ -342,7 +292,7 @@ const TopSection = () => {
                                             {Array.from({ length: 1 }).map((_, idx) => (
                                                 <Col>
                                                     <Card className="bg-dark ">
-                                                        <Card.Img className="" src="https://i.ibb.co/tQqgdz2/images1.jpg" />
+                                                        <Card.Img className="" src="https://i.ibb.co/zFRpvk2/Beijing-China.jpg" />
                                                         <Card.Body className="card-btn">
                                                             <Button className=" card-btnInfo me-3"> <GoMarkGithub /> Github</Button>
                                                             <Button className="  card-btnInfo "><AiOutlineChrome /> Live Site</Button>
@@ -353,10 +303,15 @@ const TopSection = () => {
                                             {Array.from({ length: 1 }).map((_, idx) => (
                                                 <Col>
                                                     <Card className="bg-dark ">
-                                                        <Card.Img className="" src="https://i.ibb.co/tQqgdz2/images1.jpg" />
+                                                        <Card.Img className="" src="https://i.ibb.co/23LnYqy/footer1.jpg" />
                                                         <Card.Body className="card-btn">
-                                                            <Button className=" card-btnInfo me-3"> <GoMarkGithub /> Github</Button>
-                                                            <Button className="  card-btnInfo "><AiOutlineChrome /> Live Site</Button>
+                                                            <Button className=" card-btnInfo me-3">
+                                                                <GoMarkGithub />
+                                                                Github</Button>
+                                                            <Button className="  card-btnInfo ">
+                                                                <AiOutlineChrome />
+                                                                <a href="https://github.com/shakawatChy434">Live Site</a>
+                                                            </Button>
                                                         </Card.Body>
                                                     </Card>
                                                 </Col>
@@ -367,9 +322,7 @@ const TopSection = () => {
                             </Row>
                         </Col>
                     </Row>
-
                     {/*My Portfolio Part End */}
-
                 </Col>
             </Row>
         </div>
