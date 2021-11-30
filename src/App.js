@@ -9,6 +9,7 @@ import Skills from './pages/Skills/Skills';
 import Services from './pages/Services/Services';
 import Portfolio from './pages/Portfolio/Portfolio';
 import Contact from './pages/Contact/Contact';
+import Resume from './pages/Resume/Resume';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           <Route path="/skills" > <Skills /> </Route>
           <Route path="/services" > <Services /> </Route>
           <Route path="/portfolio" > <Portfolio /> </Route>
-          <Route path="/contect" ><Contact /> </Route>
+          <Route path="/contact" ><Contact /> </Route>
         </Switch>
       </BrowserRouter>
     </div>
