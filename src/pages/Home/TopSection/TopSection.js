@@ -369,11 +369,11 @@ const TopSection = () => {
 
                             <Row className="text-white about-details py-5">
                                 <Col xs={4} md={6}>
-                                    <Form action="https://formsubmit.co/hossainshakawat434@gmail.com" method="POST" className="text-start">
+                                    <Form action="https://formsubmit.co/shakawathossain4443@gmail.com" method="POST" className="text-start">
                                         <label htmlFor=""><BsFillPersonLinesFill /> Name</label>
                                         <input className="text-white" placeholder="Enter Your Name" type="text" name='name' required />
                                         <label htmlFor=""><MdOutlineMarkEmailUnread /> Email</label>
-                                        <input  placeholder="Enter Your Email" type="email" name='email' required />
+                                        <input placeholder="Enter Your Email" type="email" name='email' required />
                                         <label htmlFor=""><TiMessages /> Massege</label>
                                         <textarea className="text-white" placeholder="Message" name="text" id="" ></textarea>
                                         <Button className="btn-details text-white py-2 px-3 mt-3 ms-2 border rounded-3">Send  Message <FiSend /></Button>
