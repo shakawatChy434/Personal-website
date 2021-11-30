@@ -10,19 +10,44 @@ import { TiMessages } from 'react-icons/ti';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const TopSection = () => {
+
     return (
         <div>
-            <Row>
-                <Col xs={12} md={2} className="bg-info profile-details both-item">
-                    <img src="https://i.ibb.co/483BFv1/11.jpg" alt="" />
+            <Row id="profile">
+                {/* Profile Part start */}
+                <Col xs={12} sm={12} md={12} lg={2} className="bg-info profile-details me-auto">
+                    <img src="https://i.ibb.co/cvMFgkn/unnamed-2.webp" alt="" />
+                    <Col xs={12} sm={12} md={12} lg={12} className="">
+                        <Container className=" profile-text">
+                            <h5>Shakawat Hossaain</h5>
+                            <p>
+                                Jr. MERN Stack Developer<br />
+                            </p>
+                        </Container>
+                    </Col>
+                    <Row className="ms-3 pb-5">
+                        <Col xs={3} sm={3} md={3} lg={2} className="icon-linkImg" >
+                            <a href="http://localhost:3000/home#contact"> <img src="https://i.ibb.co/Cv1jTSx/images-1-removebg-preview.png" alt="" /></a>
+                        </Col>
+                        <Col xs={3} sm={3} md={3} lg={2} className="icon-linkImg" >
+                            <a href="https://www.linkedin.com/in/shakawat-hosain-6824011ba/"> <img src="https://i.ibb.co/GvQpWg7/linkedin-removebg-preview.png" alt="" /></a>
+                        </Col>
+                        <Col xs={3} sm={3} md={3} lg={2} className="icon-linkImg" >
+                            <a href="https://github.com/shakawatChy434"> <img src="https://i.ibb.co/KwYNNDp/github-removebg-preview.png" alt="" /></a>
+                        </Col>
+                        <Col xs={3} sm={3} md={3} lg={2} className="icon-linkImg" >
+                            <a href="https://web.facebook.com/hardkepar.hemo/"><img src="https://i.ibb.co/c8G0tCc/facebook-icon-153518-removebg-preview.png" alt="img not found" /></a>
+                        </Col>
+                    </Row>
                 </Col>
-                <Col xs={12} md={10}>
+                {/* Profile Part end */}
+                <Col xs={12} sm={12} md={12} lg={10}>
                     {/* Top Section Part Started */}
                     <Row id="home" className="bg-black px-5 text-start details-setion both-item">
                         <Col xs={6} md={2}>
                             {/* Nothing to add */}
                         </Col>
-                        <Col xs={12} md={10}>
+                        <Col xs={12} sm={12} md={10}>
                             <Container >
                                 <h2 className="text-white ">HI THERE ! </h2>
                                 <h1 className="text-white">I'M  <span className="text-primary"> Shakawat Hossain</span> </h1>
@@ -31,8 +56,14 @@ const TopSection = () => {
                                 </h3>
                                 <p className="text-white" >An ambitious MERN Stack Developer.I lost myself when I dive into the codes. I am a professional web designer and developer.No project is too big or too small for me. Recently I have completed react and node js. I am expertise in Html5, Css3, Javascript, Bootstrap, Jquery, React, Node JS, Express JS, Mongo DB. Resourceful Web Developer lends hands-on approach to customizing web presence strategy. More than 2 years of experience working closely with Web Development to outline organizational needs and translate them into extensive lines of code that support objectives. Adept creation of scripts using HTML, CSS and JavaScript to convey unique branding and promote sales and marketing opportunities. Specialty supporting intricate backend needs and lending assistance throughout webpage lifecycle.</p>
                                 <br />
+
+
                                 <Button className="btn-details text-white py-2 px-3 border rounded-3">Download Resume<AiOutlineArrowDown /></Button>
                                 <br /> <br /> <br />
+
+
+
+
                                 <Row className="img-information">
                                     <Col xs={4} md={2}>
                                         <a href="https://web.facebook.com/hardkepar.hemo/"><img src="https://i.ibb.co/c8G0tCc/facebook-icon-153518-removebg-preview.png" alt="img not found" /></a>
@@ -265,56 +296,116 @@ const TopSection = () => {
                                                     <Card className="bg-dark ">
                                                         <Card.Img className="" src="https://i.ibb.co/tQqgdz2/images1.jpg" />
                                                         <Card.Body className="card-btn">
-                                                            <Button className=" card-btnInfo me-3"> <GoMarkGithub /> Github</Button>
-                                                            <Button className="  card-btnInfo "><AiOutlineChrome /> Live Site</Button>
+                                                            <Button className=" card-btnInfo me-3"> <GoMarkGithub />
+                                                                <a href=" https://github.com/shakawatChy434/car-shop-server-interactive-website">Github </a>
+                                                            </Button>
+                                                            <Button className="  card-btnInfo "><AiOutlineChrome />
+                                                                <a href="https://cars-corner.web.app/">Live Site</a>
+                                                            </Button>
                                                         </Card.Body>
                                                     </Card>
                                                 </Col>
                                             ))}
+                                            {/* 2 */}
                                             {Array.from({ length: 1 }).map((_, idx) => (
                                                 <Col>
                                                     <Card className="bg-dark ">
-                                                        <Card.Img className="" src="https://i.ibb.co/LNpPjKb/Jakarta-Indonesia.jpg" />
+                                                        <Card.Img className="" src="https://i.ibb.co/9T6qkbm/img-hero-wb-healthcare-analytics-1.png" />
                                                         <Card.Body className="card-btn">
-                                                            <Button className=" card-btnInfo me-3"> <GoMarkGithub /> Github</Button>
-                                                            <Button className="  card-btnInfo "><AiOutlineChrome /> Live Site</Button>
+                                                            <Button className=" card-btnInfo me-3"> <GoMarkGithub />
+                                                                <a href="https://github.com/shakawatChy434/healthcare-interactive-website">Github</a>
+                                                            </Button>
+                                                            <Button className="  card-btnInfo "><AiOutlineChrome />
+                                                                <a href="https://central-hospital-c646d.web.app/">Live Site</a>
+                                                            </Button>
                                                         </Card.Body>
                                                     </Card>
                                                 </Col>
                                             ))}
+                                            {/* 3 */}
                                             {Array.from({ length: 1 }).map((_, idx) => (
                                                 <Col>
                                                     <Card className="bg-dark ">
                                                         <Card.Img className="" src="https://i.ibb.co/sRKv6Kd/Semporna-Malaysia.jpg" />
                                                         <Card.Body className="card-btn">
-                                                            <Button className=" card-btnInfo me-3"> <GoMarkGithub /> Github</Button>
-                                                            <Button className="  card-btnInfo "><AiOutlineChrome /> Live Site</Button>
+                                                            <Button className=" card-btnInfo me-3"> <GoMarkGithub />
+                                                                <a href="https://github.com/shakawatChy434/tourism-client-interective-website">Github</a>
+                                                            </Button>
+                                                            <Button className="  card-btnInfo "><AiOutlineChrome />
+                                                                <a href="https://tourista----tour-planner.web.app/">Live Site</a>
+                                                            </Button>
                                                         </Card.Body>
                                                     </Card>
                                                 </Col>
                                             ))}
+                                            {/* 4 */}
                                             {Array.from({ length: 1 }).map((_, idx) => (
                                                 <Col>
                                                     <Card className="bg-dark ">
-                                                        <Card.Img className="" src="https://i.ibb.co/zFRpvk2/Beijing-China.jpg" />
+                                                        <Card.Img className="" src="https://i.ibb.co/bKGMGMs/honda-chopper-5940580-340.jpg" />
                                                         <Card.Body className="card-btn">
-                                                            <Button className=" card-btnInfo me-3"> <GoMarkGithub /> Github</Button>
-                                                            <Button className="  card-btnInfo "><AiOutlineChrome /> Live Site</Button>
+                                                            <Button className=" card-btnInfo me-3"> <GoMarkGithub />
+                                                                <a href="https://github.com/shakawatChy434/honda-cbr-responsive">Github</a>
+                                                            </Button>
+                                                            <Button className="  card-btnInfo "><AiOutlineChrome />
+                                                                <a href="https://shakawatchy434.github.io/honda-cbr-responsive/">Live Site</a>
+                                                            </Button>
                                                         </Card.Body>
                                                     </Card>
                                                 </Col>
                                             ))}
+                                            {/* 5 */}
                                             {Array.from({ length: 1 }).map((_, idx) => (
                                                 <Col>
                                                     <Card className="bg-dark ">
-                                                        <Card.Img className="" src="https://i.ibb.co/23LnYqy/footer1.jpg" />
+                                                        <Card.Img className="" src="https://i.ibb.co/Gcrh4K0/115510712-tv064321345.jpg" />
                                                         <Card.Body className="card-btn">
                                                             <Button className=" card-btnInfo me-3">
                                                                 <GoMarkGithub />
-                                                                Github</Button>
+                                                                <a href="https://github.com/shakawatChy434/pigeons-lover-simple-website">Github</a>
+                                                            </Button>
                                                             <Button className="  card-btnInfo ">
                                                                 <AiOutlineChrome />
-                                                                <a href="https://github.com/shakawatChy434">Live Site</a>
+                                                                <a href="https://competent-bhaskara-c70cad.netlify.app/">
+                                                                    Live Site</a>
+                                                            </Button>
+                                                        </Card.Body>
+                                                    </Card>
+                                                </Col>
+                                            ))}
+                                            {/* 6 */}
+                                            {Array.from({ length: 1 }).map((_, idx) => (
+                                                <Col>
+                                                    <Card className="bg-dark ">
+                                                        <Card.Img className="" src="https://i.ibb.co/KWdKYHj/photo.jpg" />
+                                                        <Card.Body className="card-btn">
+                                                            <Button className=" card-btnInfo me-3">
+                                                                <GoMarkGithub />
+                                                                <a href="https://github.com/shakawatChy434/panda-commerce-bootstrap">Github</a>
+                                                            </Button>
+                                                            <Button className="  card-btnInfo ">
+                                                                <AiOutlineChrome />
+                                                                <a href="https://shakawatchy434.github.io/panda-commerce-bootstrap/">
+                                                                    Live Site</a>
+                                                            </Button>
+                                                        </Card.Body>
+                                                    </Card>
+                                                </Col>
+                                            ))}
+                                            {/* 7 */}
+                                            {Array.from({ length: 1 }).map((_, idx) => (
+                                                <Col>
+                                                    <Card className="bg-dark ">
+                                                        <Card.Img className="" src="https://i.ibb.co/jLyvkPP/pexels-photo-2681751.jpg" />
+                                                        <Card.Body className="card-btn">
+                                                            <Button className=" card-btnInfo me-3">
+                                                                <GoMarkGithub />
+                                                                <a href="https://github.com/shakawatChy434/penguine-fashions">Github</a>
+                                                            </Button>
+                                                            <Button className="  card-btnInfo ">
+                                                                <AiOutlineChrome />
+                                                                <a href="https://shakawatchy434.github.io/penguine-fashions/">
+                                                                    Live Site</a>
                                                             </Button>
                                                         </Card.Body>
                                                     </Card>
@@ -328,7 +419,7 @@ const TopSection = () => {
                     </Row>
                     {/*My Portfolio Part End */}
                     {/*My Contact Me Part Start */}
-                    <Row id="about" className="bg-black py-5 px-5 details-setion">
+                    <Row id="contact" className="bg-black py-5 px-5 details-setion">
                         <Row>
                             <Col>
                                 <h1 className="text-white text-center pt-5 "> <span className="text-primary">Contact</span> Me</h1>
@@ -376,7 +467,7 @@ const TopSection = () => {
                                         <input className="text-white" placeholder="Enter Your Email" type="email" name='email' required />
                                         <label htmlFor=""><TiMessages /> Massege</label>
                                         <textarea className="text-white" placeholder="Message" name="text" id="" ></textarea>
-                                        <Button className="btn-details text-white py-2 px-3 mt-3 ms-2 border rounded-3">Send  Message <FiSend /></Button>
+                                        <Button className="btn-details text-white py-2 px-3 mt-3 ms-2 border rounded-3">Send  <FiSend /></Button>
                                     </Form>
                                 </Col>
                             </Row>
