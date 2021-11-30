@@ -24,7 +24,6 @@ function App() {
           <Route path="/contect" ><Contact /> </Route>
         </Switch>
       </BrowserRouter>
-
     </div>
   );
 }

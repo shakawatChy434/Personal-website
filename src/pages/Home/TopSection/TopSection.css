@@ -1,7 +1,7 @@
 .profile-details img{
     border-radius: 10px;
     position: absolute;
-        height: 450px;
+    height: 300px;
     width: 250px;
   z-index: 1;
   position: fixed;
@@ -77,4 +77,14 @@
     color: #000;
     background:#fff;
     border-radius: 10%;
+}
+/* Form part */
+
+input,textarea{
+    font-size: 20px;
+    margin:2px 0;
+    background-color: rgba(78, 78, 88,0.4);
+    padding: 8px 100px;
+    border: none;
+    border-radius: 10px;
 }
