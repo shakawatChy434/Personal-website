@@ -3,6 +3,7 @@ import React from 'react';
 import './TopSection.css'
 import { Col, Container, Row } from 'react-bootstrap';
 import { AiOutlineArrowDown, } from 'react-icons/ai';
+import { MdAddIcCall, } from 'react-icons/md';
 import Particles from 'react-tsparticles';
 
 const TopSection = () => {
@@ -26,13 +27,12 @@ const TopSection = () => {
                             <h5>Shakawat Hossaain</h5>
                             <p>
                                 Jr. MERN Stack Developer<br />
+                                <MdAddIcCall /> (+880) 1842829880
                             </p>
                         </Container>
                     </Col>
                     <Row className="ms-3 pb-5">
-                        <Col xs={3} sm={3} md={3} lg={2} className="icon-linkImg" >
-                            <a href="/contact"> <img src="https://i.ibb.co/Cv1jTSx/images-1-removebg-preview.png" alt="" /></a>
-                        </Col>
+                        
                         <Col xs={3} sm={3} md={3} lg={2} className="icon-linkImg" >
                             <a href="https://www.linkedin.com/in/shakawat-hosain-6824011ba/"> <img src="https://i.ibb.co/GvQpWg7/linkedin-removebg-preview.png" alt="" /></a>
                         </Col>
