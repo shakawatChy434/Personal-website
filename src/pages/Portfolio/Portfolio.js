@@ -4,8 +4,18 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 import { AiOutlineChrome } from 'react-icons/ai';
 import { GoMarkGithub } from 'react-icons/go';
 import Header from '../Shared/Header/Header';
+import Particles from 'react-tsparticles';
+
 
 const Portfolio = () => {
+    const particlesInit = (main) => {
+        console.log(main);
+
+        // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+    };
+    const particlesLoaded = (container) => {
+        console.log(container);
+    };
     return (
         <div>
             <Header />
@@ -23,9 +33,9 @@ const Portfolio = () => {
                     </Col>
                     <Row className="ms-3 pb-5 ">
                         <Col xs={3} sm={3} md={3} lg={2} className="icon-linkImg" >
-                            <a href="http://localhost:3000/contact"> <img src="https://i.ibb.co/Cv1jTSx/images-1-removebg-preview.png" alt="" /></a>
+                            <a href="/contact"> <img src="https://i.ibb.co/Cv1jTSx/images-1-removebg-preview.png" alt="" /></a>
                         </Col>
-                        <Col xs={3} sm={3} md={3} lg={2} className="icon-linkImg" >
+                        <Col xs={3} sm={3} md={3} lg={2} className="icon-linkImg " >
                             <a href="https://www.linkedin.com/in/shakawat-hosain-6824011ba/"> <img src="https://i.ibb.co/GvQpWg7/linkedin-removebg-preview.png" alt="" /></a>
                         </Col>
                         <Col xs={3} sm={3} md={3} lg={2} className="icon-linkImg" >
@@ -38,8 +48,88 @@ const Portfolio = () => {
                 </Col>
                 {/* Profile Part end */}
                 <Col xs={12} sm={12} md={12} lg={10}>
-                    {/*My Portfolio Part End */}
+
+                    {/*My Portfolio Part sTART */}
                     <Row className="bg-black py-5 px-5 details-setion">
+                        {/* TS particles added part start */}
+                        <Particles
+                            id="tsparticles"
+                            init={particlesInit}
+                            loaded={particlesLoaded}
+                            options={{
+                                fpsLimit: 60,
+                                interactivity: {
+                                    events: {
+                                        onClick: {
+                                            enable: true,
+                                            mode: "push",
+                                        },
+                                        onHover: {
+                                            enable: true,
+                                            mode: "repulse",
+                                        },
+                                        resize: true,
+                                    },
+                                    modes: {
+                                        bubble: {
+                                            distance: 400,
+                                            duration: 2,
+                                            opacity: 0.8,
+                                            size: 40,
+                                        },
+                                        push: {
+                                            quantity: 4,
+                                        },
+                                        repulse: {
+                                            distance: 200,
+                                            duration: 0.4,
+                                        },
+                                    },
+                                },
+                                particles: {
+                                    color: {
+                                        value: "#ffffff",
+                                    },
+                                    links: {
+                                        color: "#ffffff",
+                                        distance: 150,
+                                        enable: true,
+                                        opacity: 0.5,
+                                        width: 1,
+                                    },
+                                    collisions: {
+                                        enable: true,
+                                    },
+                                    move: {
+                                        direction: "none",
+                                        enable: true,
+                                        outMode: "bounce",
+                                        random: false,
+                                        speed: 2,
+                                        straight: true,
+                                    },
+                                    number: {
+                                        density: {
+                                            enable: true,
+                                            value_area: 900,
+                                        },
+                                        value: 100,
+                                    },
+                                    opacity: {
+                                        value: 0.5,
+                                    },
+                                    shape: {
+                                        type: "circle",
+                                    },
+                                    size: {
+                                        random: false,
+                                        value: 5,
+                                    },
+                                },
+                                detectRetina: true,
+                            }}
+                        />
+                        {/* TS particles added part END */}
                         <Row>
                             <Col>
                                 <h1 className="text-white text-center pt-5 "> My <span className="text-primary">Portfolio</span></h1>
@@ -53,12 +143,12 @@ const Portfolio = () => {
                                 </Col>
                                 <Col xs={12} md={10}>
                                     <Container>
-                                        <Row xs={1} md={3} className="g-4 ">
+                                        <Row xs={1} md={3} className="g-4">
                                             {Array.from({ length: 1 }).map((_, idx) => (
                                                 <Col>
                                                     <Card className="bg-dark ">
                                                         <Card.Img className="" src="https://i.ibb.co/tQqgdz2/images1.jpg" />
-                                                        <Card.Body className="card-btn">
+                                                        <Card.Body className="card-btn ">
                                                             <Button className=" card-btnInfo me-3"> <GoMarkGithub />
                                                                 <a href=" https://github.com/shakawatChy434/car-shop-server-interactive-website">Github </a>
                                                             </Button>

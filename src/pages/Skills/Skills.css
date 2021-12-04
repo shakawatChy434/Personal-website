@@ -1,0 +1,5 @@
+.skilImg-info:hover img{
+   transform:scale(1.5) rotate(360deg) ;
+   transition: transform  3s;
+ 
+}

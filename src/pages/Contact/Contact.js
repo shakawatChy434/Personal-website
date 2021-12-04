@@ -6,10 +6,20 @@ import { FiSend } from 'react-icons/fi';
 import { MdOutlineMarkEmailUnread } from 'react-icons/md';
 import { TiMessages } from 'react-icons/ti';
 import Header from '../Shared/Header/Header';
+import Particles from 'react-tsparticles';
+
 
 const Contact = () => {
+    const particlesInit = (main) => {
+        console.log(main);
+
+        // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+    };
+    const particlesLoaded = (container) => {
+        console.log(container);
+    };
     return (
-        <div>
+        <div class="item" data-aos="zoom-in">
             <Header />
             <Row className="bg-details">
                 {/* Profile Part start */}
@@ -25,7 +35,7 @@ const Contact = () => {
                     </Col>
                     <Row className="ms-3 pb-5 ">
                         <Col xs={3} sm={3} md={3} lg={2} className="icon-linkImg" >
-                            <a href="http://localhost:3000/contact"> <img src="https://i.ibb.co/Cv1jTSx/images-1-removebg-preview.png" alt="" /></a>
+                            <a href="/contact"> <img src="https://i.ibb.co/Cv1jTSx/images-1-removebg-preview.png" alt="" /></a>
                         </Col>
                         <Col xs={3} sm={3} md={3} lg={2} className="icon-linkImg" >
                             <a href="https://www.linkedin.com/in/shakawat-hosain-6824011ba/"> <img src="https://i.ibb.co/GvQpWg7/linkedin-removebg-preview.png" alt="" /></a>
@@ -40,9 +50,89 @@ const Contact = () => {
                 </Col>
                 {/* Profile Part end */}
                 <Col xs={12} sm={12} md={12} lg={10}>
+
                     {/*My Skills Part start */}
                     {/*My Contact Me Part Start */}
-                    <Row className="bg-black py-5 px-5 details-setion bg-details">
+                    <Row className="bg-black py-5 px-5 details-setion bg-details1">
+                        {/* TS particles added part start */}
+                        <Particles
+                            id="tsparticles"
+                            init={particlesInit}
+                            loaded={particlesLoaded}
+                            options={{
+                                fpsLimit: 60,
+                                interactivity: {
+                                    events: {
+                                        onClick: {
+                                            enable: true,
+                                            mode: "push",
+                                        },
+                                        onHover: {
+                                            enable: true,
+                                            mode: "repulse",
+                                        },
+                                        resize: true,
+                                    },
+                                    modes: {
+                                        bubble: {
+                                            distance: 400,
+                                            duration: 2,
+                                            opacity: 0.8,
+                                            size: 40,
+                                        },
+                                        push: {
+                                            quantity: 4,
+                                        },
+                                        repulse: {
+                                            distance: 200,
+                                            duration: 0.4,
+                                        },
+                                    },
+                                },
+                                particles: {
+                                    color: {
+                                        value: "#ffffff",
+                                    },
+                                    links: {
+                                        color: "#ffffff",
+                                        distance: 150,
+                                        enable: true,
+                                        opacity: 0.5,
+                                        width: 1,
+                                    },
+                                    collisions: {
+                                        enable: true,
+                                    },
+                                    move: {
+                                        direction: "none",
+                                        enable: true,
+                                        outMode: "bounce",
+                                        random: false,
+                                        speed: 2,
+                                        straight: true,
+                                    },
+                                    number: {
+                                        density: {
+                                            enable: true,
+                                            value_area: 900,
+                                        },
+                                        value: 100,
+                                    },
+                                    opacity: {
+                                        value: 0.5,
+                                    },
+                                    shape: {
+                                        type: "circle",
+                                    },
+                                    size: {
+                                        random: false,
+                                        value: 5,
+                                    },
+                                },
+                                detectRetina: true,
+                            }}
+                        />
+                        {/* TS particles added part END */}
                         <Row>
                             <Col>
                                 <h1 className="text-white text-center pt-5 "> <span className="text-primary">Contact</span> Me</h1>
@@ -54,7 +144,7 @@ const Contact = () => {
                                 <Col xs={6} md={3}>
                                     {/* Nothing to add */}
                                 </Col>
-                                <Col xs={12} md={6}>
+                                <Col xs={12} md={5}>
                                     <Container className="text-start pt-5" >
                                         <p className="text-white " >
                                             Name : <span className="text-primary">Shakawat Hossaain</span> <br />
@@ -79,10 +169,10 @@ const Contact = () => {
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs={12} md={4} className="text-black py-1" >
+                        <Col xs={12} md={4} className="text-black py-1 me-5" >
 
-                            <Row className="text-white about-details py-5">
-                                <Col xs={4} md={6}>
+                            <Row className="text-white about-details py-5 me-5">
+                                <Col xs={4} md={7}>
                                     <Form action="https://formsubmit.co/hossainshakawat434@gmail.com" method="POST" className="text-start">
                                         <label htmlFor=""><BsFillPersonLinesFill /> Name</label>
                                         <input className="text-white" placeholder="Enter Your Name" type="text" name='name' required />
